@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+}
+
+.topnav{
+   width: 100%;s
+   overflow: auto;
+   background-color: #ffff;
+   display: inline-block;
+}
+
+.welcome{
+    /*float: left;*/
+    margin: 10px 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.cart{
+    height: 30px;
+    float: right;
+    margin-right: 30px;
+}
+.cart:hover{
+    background-color: #ddd8d8;
+}
+
+/***************slideshow************************/
+
+* {box-sizing:border-box}
+/* THE SLIDESHOW DIV */
+.slideshow{
+    max-width: 1000px; 
+    position: relative;
+    margin: auto;
+    display: flex; 
+}
+
+.carousel{
+    display: none;
+}
+
+.carousel .text{
+    padding: 8px 12px;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    text-align: left;
+    font-size: large;
+    /***** margin: 0; ********/
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+   vertical-align: middle;
+}
+
+/*buttons*/
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    margin-top: -22px;
+    padding: 1rem;
+    color: rgb(142, 140, 140);
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+/*hover the buttons*/
+.prev:hover, .next:hover{
+    background-color: #121111;
+}
+
+
+.dot{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 2px;
+    background-color: rgb(185, 184, 184);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to{opacity: 1;}
+}
+
+@media only screen and (max-width: 300px){
+    .prev, .next, .text {font-size: 20%}
+}
+
+
+/***************** PRODUCTS **************************/
+/***5:28*/
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+   /* font-family:-----*/
+    transition: all 0.4s cubic-bezier(0,1.57,.67,.18);
+}
+*/
+
+.box-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex: 1 1 300px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.box .image {
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+
+.box .image img{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,0.7));
+}
+
+.box .info .name {
+    padding: 10px;
+    color: #665;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.box .info .subInfo .price{
+    color: #665;
+    font-size: 20px;
+} 
+
+/************ADD TO CART BUTTON******************************
+.box .info .subInfo .btn*/
+.box .info .subInfo .addToCart {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    background: #232526;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+  }
+  
+  .box .info .subInfo .addToCart:hover {
+    background: #b3b3b3;
+    background-image: -webkit-linear-gradient(top, #b3b3b3, #818385);
+    background-image: -moz-linear-gradient(top, #b3b3b3, #818385);
+    background-image: -ms-linear-gradient(top, #b3b3b3, #818385);
+    background-image: -o-linear-gradient(top, #b3b3b3, #818385);
+    background-image: linear-gradient(to bottom, #b3b3b3, #818385);
+    text-decoration: none;
+  }
+

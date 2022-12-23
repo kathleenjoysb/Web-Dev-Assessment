@@ -1,0 +1,54 @@
+{
+    "product": [
+        {
+            "name": "Galaxy Z Fold4",
+            "brand": "Samsung",
+            "description": "Galaxy Z Fold series",
+            "price": "$1,800"
+        },
+        {
+            "name": "Galaxy Z Flip4",
+            "brand": "Samsung",
+            "description": "Galaxy Z Flip series",
+            "price": "$1,680"
+        },
+        {
+            "name": "Galaxy S22 Ultra",
+            "brand": "Samsung",
+            "description": "Galaxy S series",
+            "price": "$1,249"
+        },
+        {
+            "name": "Galaxy S22+",
+            "brand": "Samsung",
+            "description": "Galaxy S series",
+            "price": "$1,080"
+        },
+        {
+            "name": "Galaxy S21 Ultra 5G",
+            "brand": "Samsung",
+            "description": "Galaxy S series",
+            "price": "$990"
+        },
+        {
+            "name": "Galaxy Note20",
+            "brand": "Samsung",
+            "description": "Galaxy Note series",
+            "price": "$850"
+        },
+        {
+            "name": "Galaxy A53 5G",
+            "brand": "Samsung",
+            "description": "Galaxy A series",
+            "price": "$350"
+        },
+        {
+            "name": "Galaxy A33 5G",
+            "brand": "Samsung",
+            "description": "Galaxy A series",
+            "price": "$330"
+        }
+    ]
+
+
+}
